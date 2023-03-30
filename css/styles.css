@@ -51,8 +51,8 @@ main {
 .overlay {
     display: flex;
     position: absolute;
-    width: 267px;
-    height: 267px;
+    width: 283px;
+    height: 283px;
     /*background-color: hsl(178, 100%, 50%, 0.3);*/
     align-items: center;
     justify-content: center;

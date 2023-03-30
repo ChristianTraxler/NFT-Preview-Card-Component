@@ -10,9 +10,14 @@
         /*height: 100%;*/
     }
 
+    .overlay {
+        width: 288px;
+        height: 288px;
+    }
+
     .overlay:hover {
         width: 288px;
-        height: 290px;
+        height: 288px;
     }
 
     .cube {
@@ -38,6 +43,11 @@
 
     .cube { width: 90%; }
 
+    .overlay:hover {
+        width: 283px;
+        height: 283px;
+    }
+
     .creator { width: 100%; }
 }
 
@@ -51,8 +61,8 @@
     }
 
     .overlay:hover {
-        width: 270px;
-        height: 270px;
+        width: 271px;
+        height: 271px;
     }
 
     .creator { padding: 14px 0 28px 0; }
