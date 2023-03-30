@@ -5,9 +5,9 @@ main {
     max-width: 1440px;
 }
 
-.body {
-    height: 100vh;
-}
+/*.body {*/
+/*    height: 100vh;*/
+/*}*/
 
 .container {
     position: relative;
@@ -20,7 +20,7 @@ main {
 
 .card {
     width: 50%;
-    height: 76%;
+    /*height: 76%;*/
     margin: 0 auto;
     background-color: hsl(216, 50%, 16%);
     border-radius: 10px;
@@ -121,7 +121,7 @@ hr {
     justify-content: space-around;
     width: 82%;
     height: 88%;
-    padding: 8px 0 0 0;
+    padding: 14px 0 14px 0;
     align-items: center;
 }
 
@@ -133,6 +133,13 @@ hr {
     width: 17%;
     border: solid 1px hsl(0, 0%, 100%);
     border-radius: 25px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--size-50);
+    padding: var(--size-100) 0 0 0;
 }
 
 .attribution {
