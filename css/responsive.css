@@ -1,5 +1,7 @@
 @media screen and (max-width: 500px) {
 
+    .body { min-height: 100vh; }
+
     .container {
         height: 82%;
         top: 60px;
@@ -29,7 +31,7 @@
         left: 0;
         bottom: 0;
         text-align: center;
-        padding: var(--size-100) 0 0 0;
+        padding: 50px 0 20px;
     }
 
     .attribution {
@@ -39,7 +41,7 @@
 
 @media screen and (max-width: 400px) {
 
-    .card { height: 97%; }
+    /*.card { height: 97%; }*/
 
     .cube { width: 90%; }
 
