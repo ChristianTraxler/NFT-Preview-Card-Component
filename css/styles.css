@@ -1,0 +1,153 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1440px;
+}
+
+.body {
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    top: 100px;
+    /*border: solid 1px orangered;*/
+    margin: 0 auto;
+    text-align: center;
+    height: 64%;
+}
+
+.card {
+    width: 50%;
+    height: 76%;
+    margin: 0 auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.overlay:hover {*/
+/*    transition: .5s ease;*/
+/*    background-color: hsl(178, 100%, 50%);*/
+/*}*/
+
+.view {
+    display: none;
+    position: absolute;
+    opacity: 1;
+}
+
+.pictures:hover .cube {
+    background-color: hsl(178, 100%, 50%);
+}
+
+.pictures:hover .view {
+    display: block;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    left: 47%;
+}
+
+.cube:hover {
+    /*position: relative;*/
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.3;
+    cursor: pointer;
+    /*z-index: 1;*/
+}
+
+/*.pictures-blur { backdrop-filter: blur(5px); }*/
+
+.cube {
+    width: 86%;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.content {
+    display: grid;
+    padding: 0 25px;
+    text-align: left;
+}
+
+h3:hover, .jules:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+h3, .jules {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.price-days {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price, .time {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.eth {
+    padding-left: 10px;
+    color: hsl(178, 100%, 50%);
+}
+
+.days {
+    padding-left: 10px;
+}
+
+hr {
+    width: 99%;
+    border: solid 1px hsl(215, 32%, 27%);
+}
+
+.creator {
+    display: flex;
+    justify-content: space-around;
+    width: 82%;
+    height: 88%;
+    padding: 8px 0 0 0;
+    align-items: center;
+}
+
+.creator > p {
+    margin: 0;
+}
+
+.avatar {
+    width: 17%;
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 25px;
+}
+
+.attribution {
+    display: block;
+    position: relative;
+    bottom: 50px;
+    font-size: 14px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+.attribution a {
+    color: hsl(215, 51%, 70%);
+    text-decoration: none;
+}
+
+.challenge {
+    padding-bottom: 10px;
+}

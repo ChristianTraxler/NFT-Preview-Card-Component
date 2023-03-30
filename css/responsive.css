@@ -1,0 +1,46 @@
+@media screen and (max-width: 500px) {
+
+    .container {
+        height: 82%;
+        top: 60px;
+    }
+
+    .card {
+        width: 80%;
+        height: 100%;
+    }
+
+    .pictures:hover .view { left: 45%; }
+
+    .cube {
+        width: 84%;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .attribution {
+        bottom: initial;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .card { height: 97%; }
+
+    .creator { width: 100%; }
+}
+
+@media screen and (max-width: 375px) {
+
+    .card { height: 95%; }
+
+    .pictures:hover .view {
+        left: 44%;
+    }
+}
