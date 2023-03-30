@@ -5,14 +5,9 @@ main {
     max-width: 1440px;
 }
 
-/*.body {*/
-/*    height: 100vh;*/
-/*}*/
-
 .container {
     position: relative;
     top: 100px;
-    /*border: solid 1px orangered;*/
     margin: 0 auto;
     text-align: center;
     height: 64%;
@@ -20,8 +15,8 @@ main {
 
 .card {
     width: 50%;
-    /*height: 76%;*/
     margin: 0 auto;
+    padding: 25px 0 0 0;
     background-color: hsl(216, 50%, 16%);
     border-radius: 10px;
 }
@@ -32,22 +27,15 @@ main {
     align-items: center;
 }
 
-/*.overlay:hover {*/
-/*    transition: .5s ease;*/
-/*    background-color: hsl(178, 100%, 50%);*/
-/*}*/
-
 .view {
-    display: none;
+    display: block;
     position: absolute;
     opacity: 1;
 }
 
-.pictures:hover .cube {
-    background-color: hsl(178, 100%, 50%);
-}
+.cube:hover .cube { background-color: hsl(178, 100%, 50%); }
 
-.pictures:hover .view {
+.cube:hover .view {
     display: block;
     opacity: 1;
     transition: all 0.3s ease-in-out;
@@ -55,18 +43,38 @@ main {
 }
 
 .cube:hover {
-    /*position: relative;*/
     background-color: hsl(178, 100%, 50%);
     opacity: 0.3;
     cursor: pointer;
-    /*z-index: 1;*/
 }
 
-/*.pictures-blur { backdrop-filter: blur(5px); }*/
+.overlay {
+    display: flex;
+    position: absolute;
+    width: 267px;
+    height: 265px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.overlay-blur { backdrop-filter: blur(5px); }
+
+.overlay:hover {
+    width: 264px;
+    height: 264px;
+    background: hsl(178, 100%, 50%);
+    opacity: 0.5;
+}
 
 .cube {
-    width: 86%;
-    margin: 25px;
+    width: 88%;
     border-radius: 10px;
 }
 
@@ -76,9 +84,12 @@ main {
     text-align: left;
 }
 
+h3 { width: 63%; }
+
 h3:hover, .jules:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 h3, .jules {
@@ -107,9 +118,7 @@ p {
     color: hsl(178, 100%, 50%);
 }
 
-.days {
-    padding-left: 10px;
-}
+.days { padding-left: 10px; }
 
 hr {
     width: 99%;
@@ -119,15 +128,12 @@ hr {
 .creator {
     display: flex;
     justify-content: space-around;
-    width: 82%;
     height: 88%;
     padding: 14px 0 14px 0;
     align-items: center;
 }
 
-.creator > p {
-    margin: 0;
-}
+.creator > p { margin: 0; }
 
 .avatar {
     width: 17%;
@@ -136,16 +142,15 @@ hr {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--size-50);
-    padding: var(--size-100) 0 0 0;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    padding-top: 220px;
 }
 
 .attribution {
     display: block;
     position: relative;
-    bottom: 50px;
     font-size: 14px;
     text-align: center;
     color: hsl(0, 0%, 100%);
@@ -155,6 +160,4 @@ footer {
     text-decoration: none;
 }
 
-.challenge {
-    padding-bottom: 10px;
-}
+.challenge { padding-bottom: 10px; }

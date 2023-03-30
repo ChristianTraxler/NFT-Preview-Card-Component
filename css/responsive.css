@@ -10,17 +10,21 @@
         /*height: 100%;*/
     }
 
-    .pictures:hover .view { left: 45%; }
+    .overlay:hover {
+        width: 286px;
+        height: 286px;
+    }
 
     .cube {
         width: 84%;
     }
 
     footer {
+        width: 100%;
         left: 0;
         bottom: 0;
         text-align: center;
-        width: 100%;
+        padding: var(--size-100) 0 0 0;
     }
 
     .attribution {
@@ -32,6 +36,8 @@
 
     .card { height: 97%; }
 
+    .cube { width: 90%; }
+
     .creator { width: 100%; }
 }
 
@@ -39,7 +45,10 @@
 
     .card { height: 95%; }
 
-    .pictures:hover .view {
-        left: 44%;
+    .overlay:hover {
+        width: 270px;
+        height: 270px;
     }
+
+    .creator { padding: 14px 0 28px 0; }
 }
